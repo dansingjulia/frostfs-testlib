@@ -46,7 +46,7 @@ To setup development environment for `frostfs-testlib`, please, take the followi
 1. Prepare virtualenv
 
 ```shell
-$ virtualenv --python=python3.9 venv
+$ virtualenv --python=python3.10 venv
 $ source venv/bin/activate
 ```
 
