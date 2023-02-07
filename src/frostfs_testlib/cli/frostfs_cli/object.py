@@ -16,6 +16,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Delete object from FrostFS.
@@ -30,6 +31,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -54,6 +56,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Get object from FrostFS.
@@ -72,6 +75,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -95,6 +99,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         hash_type: Optional[str] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Get object hash.
@@ -112,6 +117,7 @@ class FrostfsCliObject(CliCommand):
             hash_type: Hash type. Either 'sha256' or 'tz' (default "sha256").
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -139,6 +145,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Get object header.
@@ -158,6 +165,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -180,6 +188,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Lock object in container.
@@ -196,6 +205,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -222,6 +232,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Put object to FrostFS.
@@ -243,6 +254,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -267,6 +279,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Get payload range data of an object.
@@ -285,6 +298,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
@@ -308,6 +322,7 @@ class FrostfsCliObject(CliCommand):
         session: Optional[str] = None,
         ttl: Optional[int] = None,
         xhdr: Optional[dict] = None,
+        timeout: Optional[str] = None,
     ) -> CommandResult:
         """
         Search object.
@@ -325,6 +340,7 @@ class FrostfsCliObject(CliCommand):
             ttl: TTL value in request meta header (default 2).
             wallet: WIF (NEP-2) string or path to the wallet or binary key.
             xhdr: Dict with request X-Headers.
+            timeout: Timeout for the operation (default 15s).
 
         Returns:
             Command's result.
